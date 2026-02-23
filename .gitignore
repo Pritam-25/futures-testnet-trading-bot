@@ -19,9 +19,6 @@ env/
 .venv/
 venv*/
 
-# Logs
-logs/
-*.log
 
 # Environment / credentials
 .env

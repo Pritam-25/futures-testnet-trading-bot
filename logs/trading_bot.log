@@ -1,0 +1,14 @@
+2026-02-21 23:57:25,117 | ERROR | root | Validation error while building order: 1 validation error for OrderInput
+  Value error, Price is required for LIMIT orders [type=value_error, input_value={'symbol': 'BTCUSDT', 'si...': 0.004, 'price': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2026-02-22 00:05:46,698 | INFO | root | Order placed successfully: BUY LIMIT BTCUSDT qty=0.004 price=30000.0 | Order ID: 12446242014
+2026-02-23 16:17:48,598 | INFO | root | Order placed successfully: BUY MARKET BTCUSDT qty=0.002 price=66234.8 | Order ID: 12489864602
+2026-02-23 16:18:34,090 | INFO | root | Order placed successfully: BUY MARKET BTCUSDT qty=0.004 price=66227.4 | Order ID: 12489877718
+2026-02-23 16:18:49,938 | ERROR | root | Validation error while building order: 1 validation error for OrderInput
+  Value error, Price is required for LIMIT orders [type=value_error, input_value={'symbol': 'BTCUSDT', 'si...': 0.001, 'price': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2026-02-23 16:21:32,024 | INFO | root | Order placed successfully: SELL LIMIT BTCUSDT qty=0.002 price=85000.0 | Order ID: 12489934051
+2026-02-23 16:21:43,601 | ERROR | root | Validation error while building order: 1 validation error for OrderInput
+  Value error, Price is required for LIMIT orders [type=value_error, input_value={'symbol': 'BTCUSDT', 'si...': 0.003, 'price': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2026-02-23 16:21:59,980 | INFO | root | Order placed successfully: BUY MARKET BTCUSDT qty=0.004 price=66263.8 | Order ID: 12489947433
