@@ -1,6 +1,7 @@
 import typer
 from typing import Optional
-from bot.orders import place_order, OrderInput
+from bot.orders import place_order
+from bot.validators import OrderInput
 import logging
 from bot.logging_config import setup_logging
 from pydantic import ValidationError

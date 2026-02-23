@@ -1,8 +1,6 @@
 from enum import Enum
-from pydantic import BaseModel, Field,  model_validator
+from pydantic import BaseModel, Field, model_validator
 from typing import Optional
-
-from .validators import OrderSide, OrderType
 
 
 class OrderSide(str, Enum):
