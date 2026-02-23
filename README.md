@@ -63,16 +63,68 @@ By default the code targets Binance Futures Testnet. If a BASE_URL override is s
 
 ## Usage
 
-Basic MARKET order example:
+Market Orders
+
+- Buy (MARKET):
 
 ```powershell
 python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.002
 ```
 
-Basic LIMIT order example:
+- Sell (MARKET):
+
+```powershell
+python cli.py --symbol BTCUSDT --side SELL --type MARKET --quantity 0.005
+```
+
+Limit Orders
+
+- Buy (LIMIT):
+
+```powershell
+python cli.py --symbol BTCUSDT --side BUY --type LIMIT --quantity 0.002 --price 60000
+```
+
+- Sell (LIMIT):
 
 ```powershell
 python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.002 --price 85000
+```
+
+## Example Outputs
+
+Successful LIMIT order (interactive confirm accepted):
+
+```text
+💰 Available Balance: 4898.16499732 USDT
+📈 Current BTCUSDT Price: 66288.3 USDT
+🧮 Order Notional Value: 120.00 USDT
+Do you want to place this order? [y/N]: y
+
+========== ORDER SUMMARY ==========
+Symbol: BTCUSDT
+Side: BUY
+Type: LIMIT
+Quantity: 0.002
+Price: 60000.0
+
+========== ORDER RESPONSE ==========
+Order ID: 12490143453
+Status: NEW
+Executed Quantity: 0.000
+Average Price: 0.00
+
+✅ Order placed successfully!
+```
+
+Validation failure for LIMIT order without `--price`:
+
+```text
+💰 Available Balance: 4894.72527249 USDT
+📈 Current BTCUSDT Price: 66269.5 USDT
+
+❌ Validation Error:
+• : Value error, Price is required for LIMIT orders
 ```
 
 Notes:

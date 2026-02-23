@@ -12,3 +12,5 @@
   Value error, Price is required for LIMIT orders [type=value_error, input_value={'symbol': 'BTCUSDT', 'si...': 0.003, 'price': None}, input_type=dict]
     For further information visit https://errors.pydantic.dev/2.12/v/value_error
 2026-02-23 16:21:59,980 | INFO | root | Order placed successfully: BUY MARKET BTCUSDT qty=0.004 price=66263.8 | Order ID: 12489947433
+2026-02-23 16:31:14,599 | INFO | root | Order placed successfully: SELL MARKET BTCUSDT qty=0.005 price=66297.0 | Order ID: 12490121387
+2026-02-23 16:32:13,149 | INFO | root | Order placed successfully: BUY LIMIT BTCUSDT qty=0.002 price=60000.0 | Order ID: 12490143453
