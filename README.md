@@ -66,13 +66,13 @@ By default the code targets Binance Futures Testnet. If a BASE_URL override is s
 Basic MARKET order example:
 
 ```powershell
-python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001
+python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.002
 ```
 
 Basic LIMIT order example:
 
 ```powershell
-python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.001 --price 65000
+python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.002 --price 85000
 ```
 
 Notes:
