@@ -35,8 +35,8 @@ requests
 1. Clone the repository and enter the project directory:
 
 ```powershell
-git clone <your-repo-url>
-cd primetrade_python_task
+git clone git@github.com:Pritam-25/futures-testnet-trading-bot.git
+cd futures-testnet-trading-bot
 ```
 
 2. Create and activate a virtual environment:
